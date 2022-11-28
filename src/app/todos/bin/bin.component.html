@@ -1,0 +1,12 @@
+<div class="container mt-20">
+    <div class="col" *ngFor="let todo of todos$ | async">
+        <div class="todo d-flex">
+          <div class="todo-body">
+            <div class="d-flex">
+              <span>{{ todo.id + "."}}</span> <h5 class="ml-8">{{ todo.name }}</h5>
+            </div>
+            {{"created: " + todo.date }}
+          </div>
+        </div>
+    </div>
+</div>

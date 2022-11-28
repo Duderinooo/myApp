@@ -1,0 +1,15 @@
+<div class="container">
+  <legend>Add a new Todo</legend>
+  <div class="mb-3">
+    <label for="txtBookName" class="form-label">Description</label>
+    <input
+      type="text"
+      [(ngModel)]="bookForm.name"
+      class="form-control"
+      id="txtBookName"
+    />
+  </div>
+  <div class="mb-3">   
+  <button type="button" class="btn btn-dark" (click)="save()">Create</button>
+</div>
+</div>
